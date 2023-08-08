@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Angled</title>
+<link rel="icon" href="Angled.png" type="image/x-icon">
+  <style>
+    body {
+      font-family: "Frutiger", Arial, sans-serif;
+      background: linear-gradient(45deg, #ff4a00, #1c00ff);
+      background-size: 400% 400%;
+      animation: gradientShift 10s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+        .contact-button {
+    padding: 15px 25px;
+    font-size: 20px;
+    color: white;
+    border: 1px dotted black;
+    cursor: pointer;
+    text-decoration: none;
+    animation: gradientShift 10s ease infinite;
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    #hero {
+      padding: 4rem 0;
+    }
+
+    #hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    #hero p {
+      font-size: 1.2rem;
+    }
+
+    .icon-box {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .icon-box img {
+      width: 100%;
+      max-width: 176px;
+      height: auto;
+    }
+
+    .icon-box h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .icon-box p {
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+
+    #footer {
+      background: #f8f8f8;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    #footer span {
+      color: #ff4a00;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #ff4a00;
+      color: #fff;
+      text-align: center;
+      line-height: 40px;
+      transition: opacity 0.3s;
+      z-index: 99;
+    }
+
+    .back-to-top:hover {
+      opacity: 0.8;
+    }
+h1 {
+      text-align: center;
+      font-family: "Frutiger", Arial, sans-serif;
+    }
+p {
+      text-align: center;
+      font-family: "Frutiger", Arial, sans-serif;
+    }
+.centered {
+        align-items: center;
+    }
+
+    .centered iframe {
+        max-width: 50%;
+        max-height: 50%;
+    }
+.fade-in {
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+    .fade-in.visible {
+      opacity: 1;
+    }
+  </style>
+<script>
+    // Add JavaScript code to handle the scroll event
+    document.addEventListener("DOMContentLoaded", function() {
+      var elements = document.querySelectorAll(".fade-in");
+
+      function fadeInOut() {
+        for (var i = 0; i < elements.length; i++) {
+          var element = elements[i];
+          var rect = element.getBoundingClientRect();
+
+          // Check if the element is in the viewport
+          if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+            element.classList.add("visible");
+          } else {
+            element.classList.remove("visible");
+          }
+        }
+      }
+
+      // Call the fadeInOut function on scroll
+      window.addEventListener("scroll", fadeInOut);
+      // Call the fadeInOut function on page load
+      fadeInOut();
+    });
+  </script>
+</head>
+<body>
+</nav>
+</div>
+
+
+<section id="hero" class="d-flex align-items-center">
+
+<div class="container container-md">
+<div class="row align-items-top">
+<div class="col-md-12 d-flex flex-column text-center ps-md-5 pt-4 pt-md-0">
+<h1 data-aos="fade-up" data-aos-delay="200">An Intro to <span>Angled Media</span></h1>
+<p data-aos="fade-up" data-aos-delay="400">Welcome to Angled, a one-of-a-kind platform for influencer content creation. Our mission is to make the process of creating social media content easy and enjoyable for influencers. With Angled, you'll have access to our team of experts who provide show scripts, in-depth editing, and all the resources you need to create high-quality content. Join our community of talented influencers and let's bring your content to the next level.</p>
+</div>
+<a class="contact-button" href="mailto:contact@angled.rip" id="contact-button">Contact Us</a>
+
+    <script>
+        document.getElementById('contact-button').onclick = function() {
+            var copyText = document.createElement("textarea");
+            document.body.appendChild(copyText);
+            copyText.value = "contact@angled.rip";
+            copyText.select();
+            document.execCommand("copy");
+            document.body.removeChild(copyText);
+            alert("Email address copied to clipboard: " + copyText.value);
+        };
+    </script>
+<br>
+</div>
+</div>
+ <h1>Our Brilliant Creators</h1>
+  <br>
+  <br>
+  <br>
+  <div class="row">
+    <div class="icon-box fade-in">
+      <div class="icon"><a href="https://www.youtube.com/channel/UCP2mYGClL3KjKzSrMgLytfw" target="_blank"><img src="Seed.jpeg"></a></div>
+      <h4>Seed</h4>
+      <p>1.5M Subscribers</p>
+    </div>
+    <div class="icon-box fade-in">
+      <div class="icon"><a href="https://youtube.com/channel/UCYuOVeQ3mE0tDGYUiMRF-jQ" target="_blank"><img src="Distort.jpeg"></a></div>
+      <h4>Distort</h4>
+      <p>1.1M Subscribers</p>
+    </div>
+    <div class="icon-box fade-in">
+      <div class="icon"><a href="https://www.youtube.com/channel/UCR6GsqF23pAy5H0YM-xJQxg" target="_blank"><img src="F.jpeg"></a></div>
+      <h4>F</h4>
+      <p>180K Subscribers</p>
+    </div>
+    <div class="icon-box fade-in">
+      <div class="icon"><a href="https://www.youtube.com/channel/UC12BkhbWg75T-SfPUSYWZzw" target="_blank"><img src="rap.jpeg"></a></div>
+      <h4>rapfanfromuae</h4>
+      <p>172K Subscribers</p>
+    </div>
+    <div class="icon-box fade-in">
+      <div class="icon"><a href="https://youtube.com/channel/UClq02XmDdoEr_Yqw7r6BYpA" target="_blank"><img src="Dirt.jpeg"></a></div>
+      <h4>Dirt</h4>
+      <p>150K Subscribers</p>
+    </div>
+    <div class="icon-box fade-in">
+      <div class="icon"><a href="https://youtube.com/channel/UCgADRmxp8-J7GPnFpShhBUw" target="_blank"><img src="NTS.jpeg"></a></div>
+      <h4>NTS</h4>
+      <p>150K Subscribers</p>
+    </div>
+    <div class="icon-box fade-in">
+      <div class="icon"><a href="https://www.youtube.com/channel/UCENjIeHAJ4-VGPW8psKdr_w" target="_blank"><img src="07.jpeg"></a></div>
+      <h4>07cadikiz07</h4>
+      <p>140K Subscribers</p>
+    </div>
+    <div class="icon-box fade-in">
+      <div class="icon"><a href="https://youtube.com/channel/UCzRmDEizl_FfEUrBIGc-Z7g" target="_blank"><img src="exclaim.jpeg"></a></div>
+      <h4>!</h4>
+      <p>125K Subscribers</p>
+    </div>
+    <div class="icon-box fade-in">
+      <div class="icon"><a href="https://www.youtube.com/channel/UCEoqwpoJIGqLJyqkxSB21TQ" target="_blank"><img src="Crazy.jpeg"></a></div>
+      <h4>Crazy</h4>
+      <p>110K Subscribers</p>
+    </div>
+    <div class="icon-box fade-in">
+      <div class="icon"><a href="https://www.youtube.com/channel/UCSixXpAnh9EDZx2_CqNYMpQ" target="_blank"><img src="69.jpeg"></a></div>
+      <h4>69</h4>
+      <p>105K Subscribers</p>
+    </div>
+    <div class="icon-box fade-in">
+      <div class="icon"><a href="https://www.youtube.com/channel/UCThfpuJ8LX7YeRpmSvB_lIQ" target="_blank"><img src="i.jpeg"></a></div>
+      <h4>i</h4>
+      <p>102K Subscribers</p>
+    </div>
+    <div class="icon-box fade-in">
+      <div class="icon"><a href="https://www.youtube.com/channel/UCy_idykmetWwr1RhuJouxIQ" target="_blank"><img src="A.jpeg"></a></div>
+      <h4>A</h4>
+      <p>100K Subscribers</p>
+    </div>
+    <div class="icon-box fade-in">
+      <div class="icon"><a href="https://www.youtube.com/channel/UC1B4OxF8geTDnvkRaatnCLg" target="_blank"><img src="Evie.jpeg"></a></div>
+      <h4>Evie</h4>
+      <p>37K Subscribers</p>
+    </div>
+    <div class="icon-box fade-in">
+      <div class="icon"><a href="https://youtube.com/channel/UCxKCzRhf8sCRu5X4YWwJ5VQ" target="_blank"><img src="Angled_channel.jpeg"></a></div>
+      <h4>Angled</h4>
+      <p>25K Subscribers</p>
+    </div>
+  </div>
+<br>
+<br>
+</section>
+
+
+<p>
+&copy; Copyright <strong><span>Angled Media LLC</span></strong>. All Rights Reserved
+</p>
+<br>
+</body>
+</html>
